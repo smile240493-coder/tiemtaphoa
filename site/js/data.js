@@ -1,6 +1,33 @@
 window.SHOP={
  "settings": {
-  "heroBg": ""
+  "heroBg": "",
+  "cats": [
+   {
+    "name": "Phụ kiện điện thoại",
+    "icon": "📱"
+   },
+   {
+    "name": "Gia dụng",
+    "icon": "🍳"
+   },
+   {
+    "name": "Nhà cửa & đời sống",
+    "icon": "🏠"
+   },
+   {
+    "name": "Thú cưng",
+    "icon": "🐾"
+   },
+   {
+    "name": "Ô tô - Xe máy - Xe đạp",
+    "icon": "🛵"
+   },
+   {
+    "name": "Đồ chơi",
+    "icon": "🧸"
+   }
+  ],
+  "banners": []
  },
  "products": [
   {
@@ -11,7 +38,8 @@ window.SHOP={
    "imgs": [],
    "video": "",
    "desc": "Viền nâng camera, chống sốc 1,5m, nhiều màu. Chọn đúng dòng máy khi đặt.",
-   "hot": 1
+   "hot": 1,
+   "old": 129000
   },
   {
    "id": 2,
@@ -61,7 +89,8 @@ window.SHOP={
    "imgs": [],
    "video": "",
    "desc": "Công suất 1500W, 8 chế độ nấu, giỏ chống dính dễ rửa.",
-   "hot": 1
+   "hot": 1,
+   "old": 1590000
   },
   {
    "id": 7,

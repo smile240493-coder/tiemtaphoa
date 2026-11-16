@@ -18,3 +18,8 @@ Mở /quan-tri (mật khẩu mặc định `admin123`, đổi ở ADMIN_PASS tro
 
 ## Giới hạn
 Giỏ hàng, đơn hàng và bản nháp lưu trong trình duyệt. Để nhận đơn về một nơi và quản trị từ xa, cần backend (Supabase, Vercel Postgres/Blob…).
+
+## Danh mục, banner, tài khoản (bản cập nhật)
+- Trang quản trị có tab "Danh mục" (tên + biểu tượng), "Banner & nền" (nhiều banner chạy luân phiên) và ô "Giá gốc" để làm Flash Sale.
+- Khách có thể đăng ký, đăng nhập (dang-nhap.html) và xem đơn của mình (tai-khoan.html).
+- LƯU Ý: tài khoản khách lưu trong trình duyệt (localStorage), chỉ dùng được trên chính thiết bị đã đăng ký. Muốn tài khoản dùng chung mọi thiết bị cần backend (Supabase Auth, Firebase Auth...).
