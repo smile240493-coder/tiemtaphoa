@@ -34,8 +34,9 @@ document.addEventListener("click",()=>$$(".menu").forEach(x=>x.hidden=true));
 const lg=$("#lg");if(lg)lg.onclick=()=>{localStorage.removeItem(K.ss);location.href="index.html"};
 $("#ftr").innerHTML=`<div class="wrap"><div><h3>Tiện Ích Store</h3><p>Phụ kiện điện thoại và đồ gia dụng, bảo hành rõ ràng, giao toàn quốc.</p></div>
 <div><h3>Liên kết</h3><p>${links.map(l=>`<a href="${l[0]}">${l[1]}</a>`).join("<br>")}</p></div>
-<div><h3>Liên hệ</h3><p>123 Đường Mẫu, Hà Nội<br>0900 000 000<br><a href="quan-tri.html">Quản trị</a></p></div></div>`;
+<div><h3>Liên hệ</h3><p>Thôn Tân Trà, xã Hương Đô<br><a href="tel:0989740300">0989 740 300</a><br><a href="quan-tri.html">Quản trị</a></p></div></div>`;
 badge();
+const fab=document.createElement("div");fab.className="fab";fab.innerHTML='<a class="f1" href="tel:0989740300" aria-label="Gọi ngay 0989 740 300">📞 Gọi ngay</a><a class="f2" href="https://zalo.me/0989740300" target="_blank" rel="noopener" aria-label="Chat Zalo">💬 Zalo</a>';document.body.append(fab);
 const hw=$("#herowrap");if(hw&&S.heroBg){hw.style.backgroundImage=`url("${S.heroBg.replace(/"/g,"%22")}")`;hw.classList.add("hasbg")}
 
 /* Thẻ sản phẩm + cửa sổ chi tiết */
@@ -75,9 +76,6 @@ if(s.value)r.sort((a,b)=>s.value==="asc"?a.price-b.price:b.price-a.price);
 $("#count").textContent=r.length+" sản phẩm";$("#list").innerHTML=r.map(card).join("")||"<p>Không tìm thấy sản phẩm phù hợp. Hãy thử từ khóa khác.</p>"};
 [q,c,s].forEach(x=>x.addEventListener("input",draw));draw()}
 
-if(page==="contact")$("#cf").addEventListener("submit",e=>{e.preventDefault();const f=new FormData(e.target);
-location.href=`mailto:xinchao@tienichstore.vn?subject=${encodeURIComponent("Liên hệ từ "+f.get("name"))}&body=${encodeURIComponent(f.get("msg")+"\n\n"+f.get("name")+" – "+f.get("email"))}`;
-$("#cmsg").textContent="Đang mở ứng dụng email của bạn…"});
 
 if(page==="cart"){
 const box=$("#cartbox");
